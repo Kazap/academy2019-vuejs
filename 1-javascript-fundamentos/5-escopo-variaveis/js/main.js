@@ -1,0 +1,1 @@
+/* Variavel global e local */
