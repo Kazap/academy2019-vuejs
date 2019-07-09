@@ -42,7 +42,9 @@ const alunosSalas = pessoas.map(pessoa => {
 
 // filter
 
-const alunosSalas
+const alunosMaioresDeIdade = pessoas.filter(pessoa => {
+  return pessoa.idade >= 18
+})
 
 // reduce
 const valorInicial = 0
