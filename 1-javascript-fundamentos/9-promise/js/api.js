@@ -1,4 +1,3 @@
-const numeros = [10, 5, 3, 3, 2, 9]
 const pessoas = [
   {
     nome: 'Christie C. Craighead',
@@ -29,23 +28,16 @@ const pessoas = [
     idade: 21
   },
 ]
-const salas = ['A', 'B', 'C', 'D', 'E']
+function listaPessoas(erro) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if(!erro) {
+          resolve(pessoas)
+        } else {
+          reject(new Error('Falha ao tentar listar pessoas'))
+        }
+      }, 1000)
+    })
+}
 
-// map
-
-const alunosSalas = pessoas.map(pessoa => {
-  return {
-    ...pessoa,
-    sala: salas[Math.floor(Math.random()*salas.length)]
-  }
-})
-
-// filter
-
-const alunosSalas
-
-// reduce
-const valorInicial = 0
-const somaDosNumeros = numeros.reduce((acumulador, valorAtual) => {
-  return acumulador + valorAtual
-}, valorInicial)
+const API = { listaPessoas }

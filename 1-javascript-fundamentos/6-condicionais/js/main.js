@@ -1,3 +1,7 @@
+const a = 10
+const b = 5
+const c = '5'
+
 /*
   Operadores de comparação
   - igual a
@@ -8,6 +12,7 @@
   - menor que
   - menor ou igual a
 */
+
 
 /*
  Operadores Lógicos

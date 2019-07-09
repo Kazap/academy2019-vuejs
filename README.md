@@ -3,15 +3,4 @@
 
 ### Javascript
 
-- formas de importar o javascript
-- console.log
-- var / let / const
-- undefined
-- string / number
-- if/else
-- for in, for of
-- arrays
-- objects
-- arrays methods
-- functions
-- arrow functions
+- MDN - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
