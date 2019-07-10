@@ -3,7 +3,9 @@
     <div class="action action-left">
       <slot name="action-left" />
     </div>
-    <img class="logo" :src="require('../assets/logo.png')" alt="Logo"/>
+    <div class="wrapper-logo">
+      <img class="logo" :src="require('../assets/logo.png')" alt="Logo"/>
+    </div>
     <div class="action action-right">
       <slot name="action-right" />
     </div>
@@ -22,6 +24,8 @@ export default {
   background: #354463;
   padding: .8em .8em;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo {
   width: 80px;
@@ -34,5 +38,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.wrapper-logo {
+  flex: 1;
 }
 </style>
